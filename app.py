@@ -4,9 +4,8 @@ import pandas as pd
 import io
 
 app = Flask(__name__)
-app.secret_key = 'secret_key'  # لتفعيل الرسائل المؤقتة
+app.secret_key = 'secret-key'
 
-# إعداد البيانات الافتراضية
 hospitals = ["مستشفى طرابلس المركزي", "مستشفى بنغازي الطبي", "مستشفى مصراتة العام"]
 departments = ["قسم الباطنة", "قسم الجراحة", "قسم الأطفال", "قسم النساء والتوليد"]
 patient_types = ["بالغ", "طفل", "مسن"]
